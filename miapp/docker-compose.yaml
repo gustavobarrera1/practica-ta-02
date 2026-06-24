@@ -1,0 +1,17 @@
+services:
+  web: 
+    build: . 
+    container_name: miapp-test
+    ports:
+      - "5000:5000" 
+    volumes:
+      - /user_data:/app/instance
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: on-failure
+
+volumes:
+  user_data:
