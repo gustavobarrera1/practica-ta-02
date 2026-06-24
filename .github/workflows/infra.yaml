@@ -3,6 +3,11 @@ name: Terraform
 on:
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+  deployments: write
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
