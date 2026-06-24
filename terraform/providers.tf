@@ -1,10 +1,10 @@
 terraform {
 
   backend "s3" {
-    bucket = "flaskapp-tfstate-1"
-    key = "dev/terraform.tfstate"
-    region = "us-east-1"
-    encrypt = true
+    bucket       = "flaskapp-tfstate-1"
+    key          = "dev/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
     use_lockfile = true
   }
 
