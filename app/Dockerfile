@@ -25,7 +25,9 @@ RUN apt-get purge -y gcc libpq-dev build-essential && \
 
 COPY . .
 
-RUN useradd -m -u 10001 appuser
+RUN mkdir -p /app/instance && \
+    useradd -m -u 10001 appuser && \
+    chown -R appuser:appuser /app
 
 USER appuser
 
