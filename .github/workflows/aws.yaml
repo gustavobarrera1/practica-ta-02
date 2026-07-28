@@ -1,6 +1,7 @@
-name: Deploy to Amazon ECS
+name: Deploy to Amazon ECR
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Terraform"]
     types: [completed]
