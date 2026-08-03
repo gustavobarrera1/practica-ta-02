@@ -1,7 +1,7 @@
 [
     {
       "name": "ecs-task-family-workshop",
-      "image": "058222268637.dkr.ecr.us-east-1.amazonaws.com/flask_app_repository:26ddae3dc93bd15c001ab00e80ca6253b0539bd8",
+      "image": "058222268637.dkr.ecr.us-east-1.amazonaws.com/flask_app_repository:c5c76867352bad81ad8f289df588d75040f2a258",
       "essential": true,
       "portMappings": [
         {

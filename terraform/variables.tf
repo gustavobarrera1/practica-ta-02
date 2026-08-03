@@ -5,3 +5,7 @@ variable "ecs_task_def_memory" {
 variable "ecs_task_def_cpu" {
   type = string
 }
+
+variable "aws_region" {
+  
+}

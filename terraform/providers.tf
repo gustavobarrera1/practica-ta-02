@@ -17,5 +17,16 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.aws_region
+
+  default_tags {
+    tags = {
+      Environment = "dev"
+      Project     = "flaskapp"
+      CreatedBy   = "Terraform"
+      Version     = "1.0.0"
+      TerraformVersion = "v1.15.5"
+      Owner       = "gbarrera"
+    }
+  }
 }

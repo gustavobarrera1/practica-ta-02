@@ -5,8 +5,4 @@ resource "aws_ecr_repository" "flask_app_block" {
   image_scanning_configuration {
     scan_on_push = true
   }
-  tags = {
-    Environment = "dev"
-    Project     = "flask-app"
-  }
 }

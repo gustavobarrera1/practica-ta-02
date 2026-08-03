@@ -1,11 +1,5 @@
 resource "aws_ecs_cluster" "ecs_workshop" {
     name = "ecs-workshop"
-
-    tags = {
-        CreatedBy   = "gbarrera"
-        Environment = "dev"
-        Project     = "flask-app"
-    }
 }
 
 resource "aws_ecs_task_definition" "ecs_task_workshop" {
