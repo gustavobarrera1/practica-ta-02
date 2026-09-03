@@ -18,7 +18,7 @@ env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
   ECR_REPOSITORY: flask_app_repository
   ECS_CLUSTER: ecs-workshop                 # Nombre de tu clúster según Terraform
-  ECS_SERVICE: flask-service                # El nombre que le daremos al servicio en ECS
+  ECS_SERVICE: ecs-service-workshop           # El nombre que le daremos al servicio en ECS
   ECS_TASK_DEFINITION: .aws/task-definition.json # Archivo que debe estar en la raíz del repo
   CONTAINER_NAME: flaskapp                  # Debe coincidir exactamente con el task-definition
 
