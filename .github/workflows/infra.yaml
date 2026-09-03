@@ -14,8 +14,8 @@ jobs:
     environment: dev
 
     env:
-      TF_VAR_ecs_task_def_memory: "512"
-      TF_VAR_ecs_task_def_cpu: "256"
+      TF_VAR_ecs_task_def_memory: ${{ vars.ECS_TASK_DEF_MEMORY }}
+      TF_VAR_ecs_task_def_cpu: ${{ vars.ECS_TASK_DEF_CPU }}
 
     defaults:
       run:
