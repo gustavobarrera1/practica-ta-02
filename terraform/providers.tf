@@ -14,6 +14,9 @@ terraform {
       version = "~> 6.0"
     }
   }
+
+  # required_version = ">= 1.0.0" #tflint
+
 }
 
 provider "aws" {
@@ -21,12 +24,12 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Environment = "dev"
-      Project     = "flaskapp"
-      CreatedBy   = "Terraform"
-      Version     = "1.0.0"
+      Environment      = "dev"
+      Project          = "flaskapp"
+      CreatedBy        = "Terraform"
+      Version          = "1.0.0"
       TerraformVersion = "v1.15.5"
-      Owner       = "gbarrera"
+      Owner            = "gbarrera"
     }
   }
 }

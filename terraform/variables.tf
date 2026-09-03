@@ -7,5 +7,5 @@ variable "ecs_task_def_cpu" {
 }
 
 variable "aws_region" {
-  
+  type = string
 }

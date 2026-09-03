@@ -28,7 +28,7 @@ resource "aws_security_group" "load_balancer_security_group" {
 
 resource "aws_lb_target_group" "target_group" {
     name        = "ecs-workshop-target-group"
-    port        = 80
+    port        = 5000
     protocol    = "HTTP"
     target_type = "ip"
     vpc_id      = "${var.default_vpc_id}"
